@@ -517,12 +517,12 @@ begin
         Connection.zCommand.FieldByName('IdPersonal').AsInteger := cdPersonal.FieldByName('IdPersonal').AsInteger;
         Connection.zCommand.FieldByName('FechaMovimiento').AsDateTime := FechaMovimiento.Date;
         Connection.zCommand.FieldByName('FechaReal').AsDateTime := FechaMovimiento.Date;
-        Connection.zCommand.FieldByName('FechaRegistro').AsDateTime := Now;
-        Connection.zCommand.FieldByName('TipoMovimiento').AsString := 'Baja';
+        Connection.zCommand.FieldByName('FechaRegistro').AsDateTime := Now; ShowMessage(TFieldDef(Connection.zCommand.FieldDefs.Items[5]).ClassName);
+        Connection.zCommand.FieldByName('TipoMovimiento').AsVariant := 'Baja';
         Connection.zCommand.FieldByName('Jornada').AsInteger := 8;
         Connection.zCommand.FieldByName('SalarioDiario').AsFloat := 0.00;
         Connection.zCommand.FieldByName('SalarioIntegrado').AsFloat := 0.00;
-        Connection.zCommand.FieldByName('Procesado').AsString := 'Si';
+        Connection.zCommand.FieldByName('Procesado').AsInteger := 0;  //'Si';
         Connection.zCommand.FieldByName('IdDepartamento').AsInteger := cdPersonal.FieldByName('IdDepartamento').AsInteger;
         Connection.zCommand.FieldByName('IdCargo').AsInteger := cdPersonal.FieldByName('IdCargo').AsInteger;
         Connection.zCommand.FieldByName('IdLocalidad').AsInteger := cdPersonal.FieldByName('IdLocalidad').AsInteger;
@@ -535,7 +535,7 @@ begin
         case MotivoBaja.ItemIndex of
           0: Connection.zCommand.FieldByName('MotivoBaja').AsString := 'Terminacion de proyecto';
           1: Connection.zCommand.FieldByName('MotivoBaja').AsString := 'Causa administrativa';
-          2: Connection.zCommand.FieldByName('MotivoBaja').AsString := 'Baja definitiva';
+          2: Connection.zCommand.FieldByName('MotivoBaja').AsInteger := 0;  //'Baja definitiva';
           3: Connection.zCommand.FieldByName('MotivoBaja').AsString := 'Baja temporal';
         end;
         Connection.zCommand.FieldByName('CuantoSiTemporal').AsString := CuantoSiTemporal.Text;
@@ -1130,7 +1130,7 @@ begin
     if cdGetDate.RecordCount > 0 then
       Result := cdGetDate.FieldByName('FechaTerminoNomina').AsDateTime
     else
-      Result := Now;
+      Result := 0;
   finally
     cdGetDate.Destroy;
   end;

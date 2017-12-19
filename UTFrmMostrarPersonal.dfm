@@ -441,7 +441,6 @@ object FrmMostrarPersonal: TFrmMostrarPersonal
             'BAJA DEFINITIVA'
             'BAJA TEMPORAL')
           TabOrder = 1
-          ExplicitTop = 81
         end
         object pnlFechaBaja: TPanel
           Left = 5
@@ -534,7 +533,6 @@ object FrmMostrarPersonal: TFrmMostrarPersonal
           Padding.Left = 4
           Padding.Right = 4
           TabOrder = 2
-          ExplicitTop = 145
           object JvLabel12: TJvLabel
             Left = 7
             Top = 6
@@ -565,7 +563,6 @@ object FrmMostrarPersonal: TFrmMostrarPersonal
           Padding.Left = 4
           Padding.Right = 4
           TabOrder = 3
-          ExplicitTop = 209
           object JvLabel3: TJvLabel
             Left = 10
             Top = 12
@@ -1087,6 +1084,10 @@ object FrmMostrarPersonal: TFrmMostrarPersonal
     Visible = False
     object PagerBajax: TTabSheet
       Caption = 'PagerBajax'
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
       object gbContratacion: TGroupBox
         Left = 0
         Top = 0
@@ -1315,6 +1316,10 @@ object FrmMostrarPersonal: TFrmMostrarPersonal
     object PageBajax2: TTabSheet
       Caption = 'PageBajax2'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitWidth = 0
+      ExplicitHeight = 0
     end
     object PageFiniquitox2: TTabSheet
       Caption = 'PageFiniquitox2'

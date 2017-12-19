@@ -2,7 +2,7 @@ object FrmMain: TFrmMain
   Left = 0
   Top = 0
   Width = 1225
-  Height = 518
+  Height = 601
   AutoScroll = True
   Caption = 'Control de documentos de Personal'
   Color = clWindow
@@ -135,7 +135,7 @@ object FrmMain: TFrmMain
   end
   object status: TdxRibbonStatusBar
     Left = 0
-    Top = 457
+    Top = 540
     Width = 1209
     Height = 23
     Panels = <
@@ -190,6 +190,7 @@ object FrmMain: TFrmMain
     Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
+    ExplicitTop = 457
   end
   object dxBarManager1: TdxBarManager
     Font.Charset = DEFAULT_CHARSET

@@ -13,7 +13,7 @@ object connection: Tconnection
     Left = 42
     Top = 1
     Bitmap = {
-      494C01014B004D001C0010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01014B004D00200010001000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000400000003001000001002000000000000030
       0100000000000000000000000000000000000000000000000000AFAFAF00A3A3
       A3000000000000000000000000000000000000000000000000003434D9000E0E
@@ -2539,8 +2539,8 @@ object connection: Tconnection
     Connection = zConnection
     Params = <>
     ShowRecordTypes = [usUnmodified, usModified, usInserted, usDeleted]
-    Left = 464
-    Top = 408
+    Left = 200
+    Top = 248
   end
   object contrato: TZReadOnlyQuery
     Connection = zConnection
@@ -2636,8 +2636,8 @@ object connection: Tconnection
     User = ''
     Password = ''
     Protocol = 'mysql-5'
-    Left = 464
-    Top = 128
+    Left = 200
+    Top = 96
   end
   object Auxiliar: TZReadOnlyQuery
     Connection = zConnection
@@ -2658,8 +2658,8 @@ object connection: Tconnection
     User = 'root'
     Password = 'danae'
     Protocol = 'mysql-5'
-    Left = 456
-    Top = 192
+    Left = 272
+    Top = 96
   end
   object qryBuscaTrx: TZReadOnlyQuery
     Connection = ConnTrx
@@ -2670,8 +2670,8 @@ object connection: Tconnection
   object CommandTrx: TZQuery
     Connection = ConnTrx
     Params = <>
-    Left = 296
-    Top = 264
+    Left = 120
+    Top = 248
   end
   object IconosBarra: TcxImageList
     FormatVersion = 1
@@ -3440,7 +3440,7 @@ object connection: Tconnection
     Left = 184
     Top = 416
     Bitmap = {
-      494C0101010005001C0030003000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C010101000500200030003000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000C00000003000000001002000000000000090
       000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF

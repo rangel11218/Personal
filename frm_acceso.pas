@@ -165,7 +165,6 @@ begin
       global_bduser := 'inteligent';
 
     connection.zConnection.Disconnect;
-
     connection.zConnection.HostName := TObjServidor(cmbServer.Properties.Items.Objects[cmbServer.ItemIndex]).IP;
     connection.zConnection.Port := StrToInt(TObjServidor(cmbServer.Properties.Items.Objects[cmbServer.ItemIndex]).Port);
     connection.zConnection.User := 'root';

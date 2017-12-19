@@ -10,7 +10,12 @@ uses
   IdIOHandlerStack, IdSSL, IdSSLOpenSSL, IdBaseComponent, IdComponent, Math,
   IdTCPConnection, IdTCPClient, IdExplicitTLSClientServerBase, IdMessageClient,
   IdSMTPBase, IdSMTP, System.ImageList, ZAbstractConnection, ZConnection,
-  ZAbstractDataset, ZDataset, ZAbstractRODataset, cxGraphics, UInteliDialog;
+  ZAbstractDataset, ZDataset, ZAbstractRODataset, cxGraphics, UInteliDialog,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.Client, FireDAC.Comp.DataSet,
+  FireDAC.UI.Intf, FireDAC.Stan.Def, FireDAC.Stan.Pool, FireDAC.Phys,
+  FireDAC.VCLUI.Wait, Data.SqlExpr, Data.DBXMySQL;
 
 type
   Tconnection = class(TDataModule)
